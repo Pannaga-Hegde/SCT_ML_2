@@ -1,11 +1,19 @@
-# CustomerInsight AI: Customer Segmentation Dashboard
+# CustomerInsight: Customer Segmentation Dashboard
 
-CustomerInsight AI is a professional Business Intelligence (BI) dashboard designed to explore and segment retail customers using an existing trained K-Means clustering model. The interface features a clean, minimal, Apple-inspired light theme built using React, Tailwind CSS v4, and Recharts, connected to a Flask API backend.
+CustomerInsight is a professional Business Intelligence (BI) dashboard designed to explore and segment retail customers using an existing trained K-Means clustering model. The interface features a clean, minimal, Apple-inspired light theme built using React, Tailwind CSS v4, and Recharts, connected to a Flask API backend.
 
 ---
+## Features
 
+- Interactive customer segmentation dashboard
+- Real-time cluster prediction
+- Analytics view with centroids and cluster statistics
+- Clean Apple-inspired light UI
+- Flask REST API backend
+- Reusable React components
 ## Folder Structure
-```text
+```
+
 SCT_ML_2/
 ├── backend/
 │   ├── app.py                     # Flask entrypoint
@@ -88,7 +96,10 @@ SCT_ML_2/
     "silhouette_score": 0.5547,
     "elbow_data": [
       { "k": 1, "wcss": 400.0 },
-      ...
+      { "k": 2, "wcss": 310.0 },
+      { "k": 3, "wcss": 240.0 },
+      { "k": 4, "wcss": 190.0 },
+      { "k": 5, "wcss": 165.0 }
     ]
   }
   ```
